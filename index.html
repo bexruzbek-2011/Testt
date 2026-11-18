@@ -1,0 +1,913 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#050505">
+    <meta name="description" content="Ferrari. The future of performance.">
+
+    <title>FERRARI — Beyond The Limits</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="loader-logo">FERRARI</div>
+            <div class="loader-line">
+                <div class="loader-progress" id="loaderProgress"></div>
+            </div>
+            <span class="loader-text">INITIALIZING EXPERIENCE</span>
+            <span class="loader-percent" id="loaderPercent">00%</span>
+        </div>
+    </div>
+
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+
+    <!-- BACKGROUND -->
+    <div class="background-grid"></div>
+    <div class="noise-overlay"></div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="#home" class="logo magnetic">
+            <span class="logo-symbol">F</span>
+            <span class="logo-text">FERRARI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home" class="nav-link active">HOME</a>
+            <a href="#experience" class="nav-link">EXPERIENCE</a>
+            <a href="#collection" class="nav-link">COLLECTION</a>
+            <a href="#technology" class="nav-link">TECHNOLOGY</a>
+            <a href="#racing" class="nav-link">RACING</a>
+        </nav>
+
+        <div class="nav-right">
+            <span class="live-status">
+                <span class="status-dot"></span>
+                SYSTEM ONLINE
+            </span>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">HOME</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#technology">TECHNOLOGY</a>
+        <a href="#racing">RACING</a>
+    </div>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-background">
+                <div class="hero-glow"></div>
+                <div class="hero-circle"></div>
+            </div>
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <span class="label-line"></span>
+                    <span>THE ART OF SPEED</span>
+                    <span class="label-year">EST. 1947</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line">BEYOND</span>
+                    <span class="title-line title-outline">THE</span>
+                    <span class="title-line">LIMITS<span class="red-dot">.</span></span>
+                </h1>
+
+                <p class="hero-description">
+                    Engineering emotion.
+                    Defining performance.
+                    Creating legends.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#experience" class="primary-button magnetic">
+                        EXPLORE EXPERIENCE
+                        <span class="button-arrow">↗</span>
+                    </a>
+
+                    <a href="#collection" class="secondary-button magnetic">
+                        DISCOVER CARS
+                    </a>
+
+                </div>
+
+                <div class="hero-bottom-info">
+                    <div class="hero-index">
+                        <span>01</span>
+                        <span class="index-line"></span>
+                        <span>05</span>
+                    </div>
+
+                    <div class="hero-scroll">
+                        SCROLL TO EXPLORE
+                        <span class="scroll-arrow">↓</span>
+                    </div>
+
+                    <div class="hero-location">
+                        MARANELLO, ITALY
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-car-image">
+                <img
+                    src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=85&w=2000&auto=format&fit=crop"
+                    alt="Red Ferrari supercar"
+                >
+            </div>
+
+            <div class="hero-vertical-text">
+                FERRARI PERFORMANCE DIVISION
+            </div>
+
+        </section>
+
+
+        <!-- ENGINE EXPERIENCE -->
+        <section class="engine-section section-padding" id="experience">
+
+            <div class="section-heading">
+                <div class="section-eyebrow">
+                    <span class="eyebrow-number">01 / 04</span>
+                    <span class="eyebrow-line"></span>
+                    <span>THE HEART OF POWER</span>
+                </div>
+
+                <h2>
+                    FEEL THE
+                    <span class="red-text">POWER.</span>
+                </h2>
+
+                <p>
+                    Nine thousand revolutions.
+                    One unforgettable sensation.
+                </p>
+            </div>
+
+
+            <div class="engine-dashboard">
+
+                <div class="dashboard-top">
+                    <span>FERRARI V12 ENGINE SYSTEM</span>
+                    <span class="dashboard-live">
+                        <span class="status-dot"></span>
+                        READY TO START
+                    </span>
+                </div>
+
+
+                <!-- TACHOMETER -->
+                <div class="tachometer-container">
+
+                    <div class="tachometer">
+
+                        <svg class="tachometer-svg" viewBox="0 0 400 400">
+
+                            <defs>
+                                <linearGradient id="rpmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#dc0000"/>
+                                    <stop offset="100%" stop-color="#c6a15b"/>
+                                </linearGradient>
+                            </defs>
+
+                            <circle
+                                class="tachometer-track"
+                                cx="200"
+                                cy="200"
+                                r="160"
+                            />
+
+                            <circle
+                                class="tachometer-progress"
+                                id="tachometerProgress"
+                                cx="200"
+                                cy="200"
+                                r="160"
+                            />
+
+                            <circle
+                                class="tachometer-inner"
+                                cx="200"
+                                cy="200"
+                                r="125"
+                            />
+
+                        </svg>
+
+
+                        <div class="tachometer-content">
+
+                            <span class="rpm-label">ENGINE SPEED</span>
+
+                            <div class="rpm-number" id="rpmNumber">
+                                0000
+                            </div>
+
+                            <span class="rpm-unit">RPM</span>
+
+                            <div class="engine-state" id="engineState">
+                                ENGINE OFF
+                            </div>
+
+                        </div>
+
+
+                        <div class="rpm-scale">
+                            <span class="scale-0">0</span>
+                            <span class="scale-2">2</span>
+                            <span class="scale-4">4</span>
+                            <span class="scale-6">6</span>
+                            <span class="scale-8">8</span>
+                            <span class="scale-9">9</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="engine-controls">
+
+                        <div class="engine-specs">
+
+                            <div class="spec-item">
+                                <span class="spec-label">ENGINE</span>
+                                <span class="spec-value">V12</span>
+                            </div>
+
+                            <div class="spec-item">
+                                <span class="spec-label">MAX RPM</span>
+                                <span class="spec-value">9000</span>
+                            </div>
+
+                            <div class="spec-item">
+                                <span class="spec-label">POWER</span>
+                                <span class="spec-value">830 HP</span>
+                            </div>
+
+                        </div>
+
+
+                        <button class="engine-start-button magnetic" id="engineStart">
+
+                            <span class="start-icon">⏻</span>
+
+                            <span class="start-text">
+                                ENGINE START
+                            </span>
+
+                            <span class="start-subtext">
+                                PRESS TO IGNITE
+                            </span>
+
+                        </button>
+
+
+                        <div class="throttle-container">
+
+                            <div class="throttle-info">
+                                <span>THROTTLE CONTROL</span>
+                                <span id="throttlePercent">0%</span>
+                            </div>
+
+                            <button
+                                class="throttle-button magnetic"
+                                id="throttleButton"
+                            >
+                                <span class="throttle-icon">▲</span>
+                                HOLD TO REV
+                            </button>
+
+                            <div class="throttle-track">
+                                <div
+                                    class="throttle-progress"
+                                    id="throttleProgress"
+                                ></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-bottom">
+                    <span>V12 NATURALLY ASPIRATED</span>
+                    <span>HIGH PERFORMANCE MODE</span>
+                    <span id="engineConnection">DISCONNECTED</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLLECTION -->
+        <section class="collection-section section-padding" id="collection">
+
+            <div class="section-heading collection-heading">
+
+                <div class="section-eyebrow">
+                    <span class="eyebrow-number">02 / 04</span>
+                    <span class="eyebrow-line"></span>
+                    <span>THE MASTERPIECES</span>
+                </div>
+
+                <h2>
+                    BORN TO
+                    <span class="red-text">DOMINATE.</span>
+                </h2>
+
+                <p>
+                    Every Ferrari tells a different story.
+                    Every detail has a purpose.
+                </p>
+
+            </div>
+
+
+            <div class="collection-grid">
+
+
+                <!-- CAR 1 -->
+                <article class="car-card" data-car="sf90">
+
+                    <div class="car-image-container tilt-card">
+
+                        <div class="car-number">01</div>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=85&w=1200&auto=format&fit=crop"
+                            alt="Ferrari supercar"
+                            class="car-image"
+                        >
+
+                        <div class="car-overlay"></div>
+
+                        <div class="car-card-top">
+                            <span>SF90 STRADALE</span>
+                            <span>2025</span>
+                        </div>
+
+                        <button class="car-view-button" data-model="SF90 STRADALE">
+                            EXPLORE ↗
+                        </button>
+
+                    </div>
+
+                    <div class="car-info">
+
+                        <div>
+                            <h3>SF90 STRADALE</h3>
+                            <p>THE NEW GENERATION</p>
+                        </div>
+
+                        <span class="car-power">986 HP</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CAR 2 -->
+                <article class="car-card" data-car="296">
+
+                    <div class="car-image-container tilt-card">
+
+                        <div class="car-number">02</div>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=85&w=1200&auto=format&fit=crop"
+                            alt="Sports car"
+                            class="car-image"
+                        >
+
+                        <div class="car-overlay"></div>
+
+                        <div class="car-card-top">
+                            <span>296 GTB</span>
+                            <span>2025</span>
+                        </div>
+
+                        <button class="car-view-button" data-model="296 GTB">
+                            EXPLORE ↗
+                        </button>
+
+                    </div>
+
+                    <div class="car-info">
+
+                        <div>
+                            <h3>296 GTB</h3>
+                            <p>PURE DRIVING EMOTION</p>
+                        </div>
+
+                        <span class="car-power">819 HP</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CAR 3 -->
+                <article class="car-card" data-car="812">
+
+                    <div class="car-image-container tilt-card">
+
+                        <div class="car-number">03</div>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?q=85&w=1200&auto=format&fit=crop"
+                            alt="Luxury sports car"
+                            class="car-image"
+                        >
+
+                        <div class="car-overlay"></div>
+
+                        <div class="car-card-top">
+                            <span>812 COMPETIZIONE</span>
+                            <span>2025</span>
+                        </div>
+
+                        <button class="car-view-button" data-model="812 COMPETIZIONE">
+                            EXPLORE ↗
+                        </button>
+
+                    </div>
+
+                    <div class="car-info">
+
+                        <div>
+                            <h3>812 COMPETIZIONE</h3>
+                            <p>THE POWER OF V12</p>
+                        </div>
+
+                        <span class="car-power">819 HP</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- CONFIGURATOR -->
+            <div class="configurator">
+
+                <div class="configurator-header">
+
+                    <div>
+                        <span class="configurator-eyebrow">
+                            PERSONALIZATION STUDIO
+                        </span>
+
+                        <h3>
+                            BUILD YOUR
+                            <span class="red-text">LEGEND.</span>
+                        </h3>
+                    </div>
+
+                    <span class="configurator-number">CONFIG / 001</span>
+
+                </div>
+
+
+                <div class="configurator-main">
+
+                    <div class="configurator-image" id="configuratorImage">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=85&w=1400&auto=format&fit=crop"
+                            alt="Ferrari color configurator"
+                            id="configCarImage"
+                        >
+
+                        <div class="config-image-overlay"></div>
+
+                        <span class="config-image-label">
+                            YOUR VISION. YOUR FERRARI.
+                        </span>
+
+                    </div>
+
+
+                    <div class="configurator-options">
+
+                        <span class="option-label">SELECT EXTERIOR COLOR</span>
+
+                        <div class="color-options">
+
+                            <button
+                                class="color-option active"
+                                data-color="#dc0000"
+                                data-name="ROSSO CORSA"
+                                style="--car-color:#dc0000"
+                                aria-label="Rosso Corsa"
+                            ></button>
+
+                            <button
+                                class="color-option"
+                                data-color="#111111"
+                                data-name="NERO"
+                                style="--car-color:#111111"
+                                aria-label="Nero"
+                            ></button>
+
+                            <button
+                                class="color-option"
+                                data-color="#f1f1f1"
+                                data-name="BIANCO"
+                                style="--car-color:#f1f1f1"
+                                aria-label="Bianco"
+                            ></button>
+
+                            <button
+                                class="color-option"
+                                data-color="#c6a15b"
+                                data-name="ORO"
+                                style="--car-color:#c6a15b"
+                                aria-label="Oro"
+                            ></button>
+
+                            <button
+                                class="color-option"
+                                data-color="#173b69"
+                                data-name="BLU"
+                                style="--car-color:#173b69"
+                                aria-label="Blu"
+                            ></button>
+
+                        </div>
+
+
+                        <div class="selected-color">
+                            <span>SELECTED FINISH</span>
+                            <span id="selectedColorName">ROSSO CORSA</span>
+                        </div>
+
+
+                        <div class="config-divider"></div>
+
+
+                        <div class="config-spec">
+                            <span>MODEL</span>
+                            <span>SF90 STRADALE</span>
+                        </div>
+
+                        <div class="config-spec">
+                            <span>ENGINE</span>
+                            <span>V8 HYBRID</span>
+                        </div>
+
+                        <div class="config-spec">
+                            <span>POWER</span>
+                            <span>986 HP</span>
+                        </div>
+
+
+                        <button class="config-button magnetic" id="configButton">
+                            SAVE CONFIGURATION ↗
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNOLOGY -->
+        <section class="technology-section section-padding" id="technology">
+
+            <div class="section-heading">
+
+                <div class="section-eyebrow">
+                    <span class="eyebrow-number">03 / 04</span>
+                    <span class="eyebrow-line"></span>
+                    <span>ENGINEERED FOR EXCELLENCE</span>
+                </div>
+
+                <h2>
+                    THE FUTURE
+                    <span class="red-text">IS NOW.</span>
+                </h2>
+
+                <p>
+                    Precision engineering meets extraordinary innovation.
+                </p>
+
+            </div>
+
+
+            <div class="technology-grid">
+
+                <div class="technology-card technology-main">
+
+                    <div class="tech-card-number">01</div>
+
+                    <div class="tech-card-content">
+                        <span>ADVANCED ENGINEERING</span>
+                        <h3>PERFORMANCE<br>WITHOUT LIMITS.</h3>
+                        <p>
+                            Precision, power and innovation
+                            working together.
+                        </p>
+                    </div>
+
+                    <div class="tech-decoration">F</div>
+
+                </div>
+
+
+                <div class="technology-card">
+
+                    <div class="tech-card-number">02</div>
+
+                    <div class="tech-card-content">
+                        <span>AERODYNAMICS</span>
+                        <h3>DESIGNED<br>TO FLY.</h3>
+                        <p>
+                            Every curve creates purpose.
+                        </p>
+                    </div>
+
+                    <div class="tech-decoration">↗</div>
+
+                </div>
+
+
+                <div class="technology-card">
+
+                    <div class="tech-card-number">03</div>
+
+                    <div class="tech-card-content">
+                        <span>HYBRID TECHNOLOGY</span>
+                        <h3>POWER MEETS<br>INTELLIGENCE.</h3>
+                        <p>
+                            Electrifying the future of speed.
+                        </p>
+                    </div>
+
+                    <div class="tech-decoration">⚡</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- F1 REACTION GAME -->
+        <section class="racing-section section-padding" id="racing">
+
+            <div class="section-heading">
+
+                <div class="section-eyebrow">
+                    <span class="eyebrow-number">04 / 04</span>
+                    <span class="eyebrow-line"></span>
+                    <span>SCUDERIA EXPERIENCE</span>
+                </div>
+
+                <h2>
+                    READY.
+                    <span class="red-text">SET.</span>
+                    GO.
+                </h2>
+
+                <p>
+                    Test your reaction.
+                    Think fast. React faster.
+                </p>
+
+            </div>
+
+
+            <div class="reaction-game">
+
+                <div class="game-top">
+                    <span>F1 REACTION TEST</span>
+                    <span class="game-status" id="gameStatus">
+                        WAITING FOR DRIVER
+                    </span>
+                </div>
+
+
+                <div class="f1-lights" id="f1Lights">
+
+                    <div class="light-column">
+                        <span class="f1-light"></span>
+                        <span class="f1-light"></span>
+                    </div>
+
+                    <div class="light-column">
+                        <span class="f1-light"></span>
+                        <span class="f1-light"></span>
+                    </div>
+
+                    <div class="light-column">
+                        <span class="f1-light"></span>
+                        <span class="f1-light"></span>
+                    </div>
+
+                    <div class="light-column">
+                        <span class="f1-light"></span>
+                        <span class="f1-light"></span>
+                    </div>
+
+                    <div class="light-column">
+                        <span class="f1-light"></span>
+                        <span class="f1-light"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="reaction-display">
+
+                    <span class="reaction-label">
+                        YOUR REACTION TIME
+                    </span>
+
+                    <div class="reaction-result" id="reactionResult">
+                        --- 
+                    </div>
+
+                    <span class="reaction-unit">MILLISECONDS</span>
+
+                </div>
+
+
+                <div class="game-message" id="gameMessage">
+                    PRESS START AND WAIT FOR THE LIGHTS
+                </div>
+
+
+                <button class="game-start-button magnetic" id="gameStart">
+                    START RACE ↗
+                </button>
+
+
+                <div class="game-bottom">
+
+                    <div>
+                        <span>BEST TIME</span>
+                        <strong id="bestTime">---</strong>
+                    </div>
+
+                    <div>
+                        <span>ATTEMPTS</span>
+                        <strong id="attempts">00</strong>
+                    </div>
+
+                    <div>
+                        <span>STATUS</span>
+                        <strong id="driverStatus">ROOKIE</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="final-section">
+
+            <div class="final-background-text">FERRARI</div>
+
+            <div class="final-content">
+
+                <span class="final-eyebrow">
+                    THE LEGEND NEVER STOPS
+                </span>
+
+                <h2>
+                    DRIVE YOUR<br>
+                    <span class="red-text">DREAM.</span>
+                </h2>
+
+                <a href="#home" class="final-button magnetic">
+                    BACK TO TOP ↑
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <span>FERRARI</span>
+                <p>BEYOND THE LIMITS.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">HOME</a>
+                <a href="#collection">COLLECTION</a>
+                <a href="#technology">TECHNOLOGY</a>
+                <a href="#racing">RACING</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>© 2026 FERRARI EXPERIENCE.</span>
+
+            <span>MADE FOR SPEED.</span>
+
+            <span>MARANELLO, ITALY</span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL -->
+    <div class="modal" id="carModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose" aria-label="Close">
+                ×
+            </button>
+
+            <span class="modal-eyebrow">
+                FERRARI COLLECTION
+            </span>
+
+            <h2 id="modalTitle">SF90 STRADALE</h2>
+
+            <p>
+                Discover the extraordinary engineering
+                behind the Ferrari experience.
+            </p>
+
+            <button class="modal-action" id="modalAction">
+                CLOSE EXPERIENCE
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- AUDIO STATUS -->
+    <div class="audio-indicator" id="audioIndicator">
+        <span class="audio-dot"></span>
+        V12 AUDIO SYSTEM
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="./index.js"></script>
+
+</body>
+</html>
